@@ -1,4 +1,4 @@
-add database named cocktaildb
+create database named cocktaildb
 
 composer install
 
