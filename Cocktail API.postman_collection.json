@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "9ef2a8d1-40ac-4b33-8401-5d8203659c40",
+		"name": "Cocktail API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21289602"
+	},
+	"item": [
+		{
+			"name": "Cocktail",
+			"item": [
+				{
+					"name": "getAllCocktailDetails",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/cocktail",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRandomCocktail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/rand",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"rand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get10RandomCocktail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/rands",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"rands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFullCocktailDetailsById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/cocktail/4",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktail",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCocktailByLetter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/cocktailss/M",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cocktailss",
+								"M"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCocktailByName",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/cocktailsss/Mojito",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktailsss",
+								"Mojito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCocktailByAlcoholType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/cocktails/Non_Alcoholic",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktails",
+								"Non_Alcoholic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCocktailByCategory",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/cocktaills/Classic",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktaills",
+								"Classic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCocktail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Testing",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "Some Text",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/USER/Downloads/387750209_319719654141889_6609489288835467950_n.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{hostURL}}/api/cocktail",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCocktailImage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/cocktailImage/lKtDgnTHGU9j4600D8tGr9GEHxXwdtagNkCXipwP.jpg",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"cocktailImage",
+								"lKtDgnTHGU9j4600D8tGr9GEHxXwdtagNkCXipwP.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ingredient",
+			"item": [
+				{
+					"name": "getAllIngredient",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/ingredient",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"ingredient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getIngredientById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/ingredient/2",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"ingredient",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getIngredientByName",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostURL}}/api/ingredientss/Vodka",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"ingredientss",
+								"Vodka"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createIngredient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cocktail_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Gin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{hostURL}}/api/ingredient",
+							"host": [
+								"{{hostURL}}"
+							],
+							"path": [
+								"api",
+								"ingredient"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
