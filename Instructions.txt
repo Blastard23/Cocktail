@@ -1,3 +1,5 @@
+add database named cocktaildb
+
 composer install
 
 php artisan migrate
